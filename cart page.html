@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Office Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        header nav a, footer nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .cart-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .cart-header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .cart-container {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+        }
+        .check-out {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .check-out button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .check-out button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        footer img {
+            height: 50px;
+        }
+        footer nav a {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.ceofficeconcepts.com.au/images/logos/logo.svg" alt="CEO Office Concepts Logo">
+        <input type="text" placeholder="Search">
+        <nav>
+            <a href="#">Orders</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a>|</a>
+            <a href="#">Community</a>
+            <a href="#">Log in</a>
+        </nav>
+    </header>
+
+    <div class="cart-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLhYqfPkZYqYUpnE50QRYoEfhtu3O1EJwAQ&s" alt="Cart Icon">
+            <span>Cart</span>
+    </div>
+    <div class="cart-container">
+        <body>Seating</body>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/seating/meeting-room-chairs/amelie/amelie-black-leather.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Amelie</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Black</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox" checked>
+        </div>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/seating/meeting-room-chairs/amelie/amelie-tan-leather.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Amelie</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Orange</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox" checked>
+        </div>
+        <body>Sofa</body>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/sofas-lounges/ola-low-back-sofa-2-seater-pronto/ola-low-back-sofa-2-seater-pronto.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Ola Low Back Sofa - 2 Seater</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Grey</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox" checked>
+        </div>
+        <body>Office Storage</body>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/office-storage/office-storage-bookcase/bosley-storage-unit/bosley-storage-unit.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Bosley Storage Unit</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Black</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox">
+        </div>
+    </div>
+
+    <div class="check-out">
+        <button>Check Out</button>
+    </div>
+
+    <footer>
+        <img src="https://www.ceofficeconcepts.com.au/images/logos/logo.svg" alt="CEO Office Concepts Logo">
+        <nav>
+            <a href="#">Documentation</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </footer>
+</body>
+</html>

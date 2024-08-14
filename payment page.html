@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Office Concepts - Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        header input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 15%;
+        }
+        header nav a, footer nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .payment-container {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .payment-content {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .payment-method button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            background-color: white;
+            color: white;
+            border: 1px solid #aaadaa;
+            cursor: pointer;
+            border-radius: 4px;    
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+        .payment-method button img {
+            height: 24px;
+            margin-left: 10px;
+        }
+        .payment-method button:hover {
+            background-color: white;
+        }
+        .payment-form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .payment-form input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        footer img {
+            height: 50px;
+        }
+        footer nav a {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.ceofficeconcepts.com.au/images/logos/logo.svg" alt="CEO Office Concepts Logo">
+        <input type="text" placeholder="Search">
+        <nav>
+            <a href="#">Orders</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a>|</a>
+            <a href="#">Community</a>
+            <a href="#">Log in</a>
+        </nav>
+    </header>
+
+    <div class="payment-container">
+        <div class="payment-content">
+        <body>Payment Method</body>
+        <form class="payment-method">
+            <button type="button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACOilOgFVZQN1vWCnGeyq6pQrEmriZAPRLg&s" alt="PayPal">
+            </button>
+            <button type="button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlpbkKn2ILtkrTtFHvoVcNv-Q4JDavKoXuQA&s" alt="Credit Card">
+            </button>
+        </form>
+        
+        <form class="payment-form">
+            <body>Card Number</body>
+            <input type="text" placeholder="Enter your Card Number">
+            <body>CVC</body>
+            <input type="text" placeholder="Enter your CVC">
+            <body>Card Holder Name</body>
+            <input type="text" placeholder="Enter your Card Holder Name">
+            <body>Request Quote Number</body>
+            <input type="text" placeholder="Enter your Request Quote Number">
+            <body>Full Name</body>
+            <input type="text" placeholder="Enter your Full Name">
+            <body>Email</body>
+            <input type="email" placeholder="Enter your Email">
+            <body>Phone Number</body>
+            <input type="tel" placeholder="Enter your Phone Number">
+            <body>Address</body>
+            <input type="text" placeholder="Enter your Address">
+        </form>
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://www.ceofficeconcepts.com.au/images/logos/logo.svg" alt="CEO Office Concepts Logo">
+        <nav>
+            <a href="#">Documentation</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </footer>
+</body>
+</html>

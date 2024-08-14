@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .logo h1 {
+            margin: 0 0 0 10px;
+            font-size: 1.2rem;
+        }
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        .nav a.active {
+            font-weight: bold;
+        }
+        main {
+            padding: 1rem;
+        }
+        .product {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .product-image {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .product-details {
+            width: 100%;
+        }
+        .product-details h2 {
+            margin-top: 0;
+        }
+        .product-details ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .product-details ul li {
+            margin-bottom: 0.5rem;
+        }
+        .product-details ul li span {
+            font-weight: bold;
+        }
+        .product-details .buttons {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .product-details .buttons button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-details .buttons button.request-quote {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        .product-details .buttons button.add-to-cart {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+        .footer {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+        }
+        .sub-product-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .sub-product-image {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .sub-product-image img{
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        .nav {
+            text-align: right;
+        }
+
+        .nav a {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Screenshot 2024-08-08 130838.png" alt="CEOffice Concepts">
+            <div class="navTop">
+                <div class="navItem">
+                <img src="./img/Screenshot 2024-04-11 025510.png" alt="">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search" class="searchInput">
+            </div>
+        </div>
+        
+        <nav class="nav">
+            <a href="#">Orders</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a href="#">Community</a>
+            <a href="#" class="active">Log in</a>
+        </nav>
+    </header>
+    <main>
+        <div class="product">
+            <li>
+                <div class="product-image">
+                    <img src="img/delta-mid-back-thumbnail.jpg" alt="Chair">
+                </div>
+                <div>
+                    <img src="img/83628.png" alt="Sub Product Image"width="50px"height="50px">   
+                </div>
+            </li>
+            <div class="product-details">
+                <h2>Chair</h2>
+                
+                <ul>
+                    <li><span>Product Description:Our premium office chair offers ultimate comfort and support. Sturdy metal frame, high-density foam cushioning, and breathable mesh fabric promote good posture and reduce back pain.</span>  </li>
+                    <li><span>Features:Ergonomic design with adjustable lumbar support and armrests. 360-degree swivel and smooth-rolling casters for easy mobility. Durable metal frame with 250 lbs weight capacity.</span>  </li>
+                    <li><span>Options:Choose from 4 colors: Black, blue, Gray, or Navy Blue. Select from 3 fabrics: Mesh, Leather, or Fabric Upholstery. Fixed or adjustable armrests and casters available.</span> </li>
+                    <li><span>In Stock:In stock and ready to ship within 24 hours. 30-day money-back guarantee and 5-year warranty. Order now and experience comfort and productivity!</span>  </li>
+                </ul>
+                <div class="buttons">
+                    <button class="request-quote">Request Quote</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer class="footer">
+        
+        <a href="#">Documentation</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Contact us</a>
+    </footer>
+</body>
+</html>
