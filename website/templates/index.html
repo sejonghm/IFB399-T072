@@ -2,8 +2,8 @@
 
 {% block navbar %}
     <a class="nav-link active" aria-current="page" href="/">Home</a>
-    <a class="nav-link" href="{{ url_for('event.booking_history') }}">Bookings</a>
-    <a class="nav-link" href="{{ url_for('event.create') }}">Create Event</a>
+    <a class="nav-link" href="{{ url_for('event.booking_history') }}">Furnitures</a>
+    <a class="nav-link" href="{{ url_for('event.create') }}">Add Furniture</a>
 {% endblock %}
 
 {% block content %}
@@ -13,18 +13,18 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <div class="input-group rounded">
-                    <input name="search" type="search" id="searchForm" class="form-control rounded border border-secondary" placeholder="Search for events" aria-label="Search" aria-describedby="search-addon" />
+                    <input name="search" type="search" id="searchForm" class="form-control rounded border border-secondary" placeholder="Search your Furniture" aria-label="Search" aria-describedby="search-addon" />
                 </div>
             </div>
         </div>
         <br><br>
-        <h1 class="text-center"><img src="https://www.ceofficeconcepts.com.au/images/logos/logo.svg" alt="CEO Office Concepts Logo" style="height: 200px; margin-left: 200px;"></h1>
+        <h1 style="margin-left: 280px;"><em>About Us</em></h1>
         
     </form>
     <br>
     <br>
     <div class="text-center">
-        <p class="lead" style="max-width: 800px; margin: auto;">
+        <p class="lead" style="max-width: 600px; margin-left: 50px; ">
             CEOffice Concepts is a strong, family-owned and operated furnishings business, which has been operating out of Queensland for over 40 years. 
             The team at CEOffice Concepts is an authority in designing and furnishing businesses, dedicated to providing clients with the desired visual, legal, and functional requirements. 
             Our products are sourced from organizations that share the same high standards of products and maintain a similar vision of excellence. 
