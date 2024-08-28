@@ -40,7 +40,89 @@
             <p>New user? <a href="{{ url_for('auth.register') }}">Click here to register</a>.</p>
         </div>
     </div>
-</div>
-{% endif %}
+    {% elif heading|lower == 'logged_in' %}
+    <div class="cart-header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLhYqfPkZYqYUpnE50QRYoEfhtu3O1EJwAQ&s" alt="Cart Icon">
+        <span>Cart</span>
+    </div>
+    <div class="cart-container">
+        <body>Seating</body>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/seating/meeting-room-chairs/amelie/amelie-black-leather.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Amelie</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Black</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox" checked>
+        </div>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/seating/meeting-room-chairs/amelie/amelie-tan-leather.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Amelie</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Orange</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox" checked>
+        </div>
+        <body>Sofa</body>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/sofas-lounges/ola-low-back-sofa-2-seater-pronto/ola-low-back-sofa-2-seater-pronto.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Ola Low Back Sofa - 2 Seater</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Grey</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox" checked>
+        </div>
+        <body>Office Storage</body>
+        <div class="cart-item">
+            <img src="https://www.ceofficeconcepts.com.au/images/products/office-storage/office-storage-bookcase/bosley-storage-unit/bosley-storage-unit.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name: Bosley Storage Unit</h3>
+                <label for="quantity">Quantity:</label><input type="number" id="quantity" name="quantity" min="1" max="20">
+                <p>Color: Black</p>
+                <p>Price is available upon quote request</p>
+            </div>
+            <input type="checkbox">
+        </div>
+    </div>
 
+    <div class="check-out">
+        <button id="checkout-button" onclick="showPaymentPage()">Check Out</button>
+    </div>
+    <div id="payment-page" class="hidden">
+        <form class="payment-form full-width">
+            <label>Payment Method</label>
+            <div>
+                <button type="button">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACOilOgFVZQN1vWCnGeyq6pQrEmriZAPRLg&s" alt="PayPal">
+                </button>
+                <button type="button">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlpbkKn2ILtkrTtFHvoVcNv-Q4JDavKoXuQA&s" alt="Credit Card">
+                </button>
+            </div>
+            <label>Card Number</label>
+            <input type="text" placeholder="Enter your Card Number">
+            <body>CVC</body>
+            <input type="text" placeholder="Enter your CVC">
+            <body>Card Holder Name</body>
+            <input type="text" placeholder="Enter your Card Holder Name">
+            <body>Request Quote Number</body>
+            <input type="text" placeholder="Enter your Request Quote Number">
+            <body>Full Name</body>
+            <input type="text" placeholder="Enter your Full Name">
+            <body>Email</body>
+            <input type="email" placeholder="Enter your Email">
+            <body>Phone Number</body>
+            <input type="tel" placeholder="Enter your Phone Number">
+            <body>Address</body>
+            <input type="text" placeholder="Enter your Address">
+        </form>
+    </div>
+{% endif %}
+</div>
 {% endblock %}
