@@ -58,4 +58,10 @@ def create_app():
     def not_found(e): 
       return render_template("50x.html", error=e)
     
+    @main_bp.route('/') # type: ignore
+    def home():
+      return render_template('homepage.html')
+    
     return app
+     
+     
