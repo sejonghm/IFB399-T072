@@ -126,3 +126,39 @@
 {% endif %}
 </div>
 {% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="footer-container">
+        <div class="footer-section company-info">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="CEOffice Concepts Logo" class="logo">
+            <p>ABN: 85 660 232 762</p>
+        </div>
+
+        <div class="footer-section contact-info">
+            <h3>Company</h3>
+            <p>Phone: 1300 507 511</p>
+            <p><a href="mailto:sales@ceofficeconcepts.com.au">sales@ceofficeconcepts.com.au</a></p>
+        </div>
+
+        <div class="footer-section office-info">
+            <h3>Head Office</h3>
+            <p>131A Herries Street</p>
+            <p>Toowoomba City QLD 4350</p>
+            <h3>Brisbane Office</h3>
+            <p>Brighton QLD 4017</p>
+            <p>Contact Brisbane Sales at</p>
+            <p><a href="tel:0417368806">0417 368 806</a> for showroom bookings.</p>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="{{ url_for('static', filename='img/facebook-icon.png') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ url_for('static', filename='img/instagram-icon.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ url_for('static', filename='img/linkedin-icon.png') }}" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
