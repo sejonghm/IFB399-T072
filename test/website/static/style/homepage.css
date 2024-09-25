@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7f4e4;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #e7f4e4;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hero img {
+    max-width: 110%;
+    height: 60%;
+}
+
+.green-tea-bg-heading {
+    background-color: #d0f0c0; 
+    padding: 10px;
+}
+
+.green-text {
+    color: #03C03C;
+}
+
+.left-align {
+    text-align: left;
+}
+.navbar-search {
+    margin-left: auto;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    color: #333;
+}
+
+.footer-section h3 {
+    color: #57B241;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 100px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}

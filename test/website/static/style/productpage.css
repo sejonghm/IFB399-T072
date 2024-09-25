@@ -1,0 +1,184 @@
+/* <style> */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 50px;
+}
+header nav a, footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+footer {
+    text-align: center;
+    padding: 10px 20px;
+}
+footer img {
+    height: 50px;
+}
+footer nav a {
+    color: #555;
+}
+
+/* Main Product Section */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-product-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.product-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.product-details {
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Product Options and Actions */
+.product-options {
+    margin-bottom: 20px;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+}
+
+.size-btn:hover {
+    border: 1px solid #333;
+}
+
+.product-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px; /* Adds spacing above the buttons */
+}
+
+.request-quote, .add-to-cart {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.request-quote {
+    background-color: #28a745;
+    color: white;
+}
+
+.request-quote:hover {
+    background-color: #218838;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Color Options */
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-options input[type="radio"] {
+    display: none; /* Hide the actual radio buttons */
+}
+
+.color-options label {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.color-options label:hover {
+    border-color: #007bff; /* Highlight the border on hover */
+}
+
+.color-options span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-skyblue {
+    background-color: rgb(101, 208, 247);
+}
+
+.color-blue {
+    background-color: rgb(14, 44, 240);
+}
+
+.color-red {
+    background-color: rgb(200, 59, 59);
+}
+
+/* Highlight selected color */
+.color-options input[type="radio"]:checked + label {
+    border: 3px solid #007bff; /* Highlight the selected color */
+}
